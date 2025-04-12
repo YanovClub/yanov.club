@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YANOV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    .hero {
+      position: relative;
+      height: 100vh;
+      background: url('/mnt/data/22fd6c699ece6ff51712ea3294944b2d.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+    .content {
+      position: relative;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 4rem;
+      margin: 0;
+      color: #fff;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 20px 0;
+    }
+    .email-signup input[type="email"] {
+      padding: 10px;
+      width: 250px;
+      border: none;
+      border-radius: 4px 0 0 4px;
+    }
+    .email-signup button {
+      padding: 10px 20px;
+      border: none;
+      background: #ff003c;
+      color: white;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+    .socials {
+      margin-top: 30px;
+    }
+    .socials a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <h1>YANOV</h1>
+      <p>Genreless. Cinematic. Cold-blooded ambition.</p>
+      <form class="email-signup">
+        <input type="email" placeholder="Join the club" required>
+        <button type="submit">Sign Up</button>
+      </form>
+      <div class="socials">
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">TikTok</a>
+        <a href="#" target="_blank">Spotify</a>
+        <a href="#" target="_blank">YouTube</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
